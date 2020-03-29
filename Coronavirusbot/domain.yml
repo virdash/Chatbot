@@ -1,0 +1,122 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - inform
+  - search_provider
+  - thanks
+  - out_of_scope
+  - overview
+  - symptoms
+  - prevention
+  - ask_emergency
+
+entities:
+ - country
+
+slots:
+  facility_type:
+    type: unfeaturized
+  facility_address:
+    type: unfeaturized
+  facility_id:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  country:
+    type: unfeaturized
+
+forms:
+- facility_form
+
+actions:
+- utter_noworries
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- utter_ask_facility_type
+- find_facility_types
+- find_healthcare_address
+- utter_address
+- utter_overview
+- utter_symptoms
+- utter_prevention
+- utter_emergency_number
+- utter_ask_question
+
+
+responses:
+  utter_greet:
+  - text: "Hi. What are you looking for?"
+  - text: "Hey there! Please choose one of the information facility options:"
+  - text: "Hello! What can I help you find today?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  - text: "Have a good day."
+  - text: "Until next time!"
+  
+  utter_ask_location:
+  - text: "please provide your location"
+  - text: "what is ypur location?"
+  - text: "please give me your location"
+
+  utter_ask_question:
+  - text: "do you need more information about the virus?"
+  - text: "please ask me a question again, i'm training myself"
+  - text: "do want to know more about coonavirus?"
+
+  utter_emergency_number:
+  - text: "the emercency number for {country} is {number}"
+
+  
+  utter_overview:
+  - text: "Coronaviruses are a large family of viruses which may cause illness in animals or humans.  
+In humans, several coronaviruses are known to cause respiratory infections ranging 
+from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) 
+and Severe Acute Respiratory Syndrome (SARS). 
+The most recently discovered coronavirus causes coronavirus disease COVID-19."
+  
+  utter_symptoms:
+  - text: "The COVID-19 virus affects different people in different ways. COVID-19 is a respiratory disease and most infected people will develop mild to moderate symptoms and recover without requiring special treatment.  People who have underlying medical conditions and those over 60 years old have a higher risk of developing severe disease and death.
+
+  Common symptoms include:
+
+  fever
+  tiredness
+  dry cough.
+  Other symptoms include:
+
+  shortness of breath
+  aches and pains
+  sore throat
+  and very few people will report diarrhoea, nausea or a runny nose.
+  People with mild symptoms who are otherwise healthy should self-isolate and contact their medical provider or a COVID-19 information line for advice on testing and referral.
+
+People with fever, cough or difficulty breathing should call their doctor and seek medical attention."
+
+  utter_prevention:
+  - text: "To prevent infection and to slow transmission of COVID-19, do the following:
+
+Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.
+Maintain at least 1 metre distance between you and people coughing or sneezing.
+Avoid touching your face.
+Cover your mouth and nose when coughing or sneezing.
+Stay home if you feel unwell.
+Refrain from smoking and other activities that weaken the lungs.
+Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.
+"
+
+  utter_noworries:
+  - text: "My pleasure."
+  - text: "You are welcome!"
+
+  utter_ask_facility_type:
+  - text: "Choose one of the following to search for: overview, nursing home, or home health agency."
+
+
+  utter_address:
+  - text: "The address is {facility_address}."
