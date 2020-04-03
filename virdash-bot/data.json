@@ -1,0 +1,21 @@
+{"emergency_number": [
+        {"country": "senegal",
+         "number": "+221 8000050",
+        },
+        {"country": "benin",
+         "number": "+229 95361104/ +229 95361102",
+        },
+        {"country": "burkina faso",
+         "number": "+226 1608989/ +226 52195394",
+        },
+        {"country": "cabo Verde",
+         "number": "+238 8001112",
+        },
+        {"country": "ivory coast",
+         "number": "144/143/101",
+        },
+        {"country": "gambia",
+         "number": "1025",
+        },
+   ]
+}

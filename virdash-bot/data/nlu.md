@@ -20,29 +20,51 @@
 - do you have something else
 - no this does not work for me
 
-## intent:overview
+## intent:coronavirus
 - what is coronavirus?
 - tell me about coronavirus?
-- covid-19?
+
+## intent:covid-19
+- what is covid-19?
+- tell me about covid-19
 
 ## intent:symptoms
-- what are the symptoms of the virus?
-- symptoms of Coronavirus?
+- what are the symptoms?
+- What are the symptoms of COVID-19?
 - give me the symptoms of COVID-19
 - covid-19 symtoms
 - symptoms
 
+## intent:spread
+- How does COVID-19 spread?
+- spread of covid-19?
+
+## intent:covid-19_vs_sars
+- Is COVID-19 the same as SARS?
+- the difference between COVID-19 and SARS?
+- what the difference between COVID-19 and SARS?
+
+## intent:incubation_period
+- How long is the incubation period for COVID-19?
+- incubation period
+
 ## intent:prevention
 - how to prevent myself to coronavirus?
 - what are the prevention of the coronavirus?
-- preventions of the virus?
+- preventions from the virus?
 
+## intent:ask_emergency
+- i need an emergency number
+- what is the emergency number?
+- please provide me an emergency number 
 
 ## intent:inform
 - [china](country)
 - [senegal](country)
-- [nigeria](country)
+- [benin](country)
 - [ghana](country)
+- [number](facility_type)
+- a [number](facility_type)
 
 ## intent:search_provider
 - what is the situation in [senegal](country)?
